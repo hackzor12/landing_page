@@ -1,28 +1,27 @@
 import React from 'react';
+import logo from '../img/logo_allwhite.png';
 
 const Navbar = () => {
   return (
-    <nav className="teal lighten-1">
+    <nav className="blue lighten-1">
       <div className="nav-wrapper">
-        <a href="" className="brand-logo left">Logo</a>
+        {/* <a className="brand-logo left"></a> */}
+        <img src={logo} alt="Smiley face" className="nav-logo"/>
         <a href="#" data-activates="mobile-demo" className="button-collapse right">
           <i className="material-icons">menu</i>
         </a>
         <ul id="mobile-demo" className="right hide-on-med-and-down">
           <li>
-            <a href="">Home</a>
+            <a href="#about">About Us</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="">Who we are</a>
+            <a href="#our-team">Our Team</a>
           </li>
           <li>
-            <a href="">Portfolio</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

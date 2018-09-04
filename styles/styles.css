@@ -108,3 +108,20 @@ p {
 .m-r-16 {
   margin-right: 16px;
 }
+
+
+.btn {
+    text-transform: none;
+}
+
+.nav-logo {
+  height: 95%;
+  width: 228px;
+  padding: 5px;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 350px;
+  padding: 5px;
+}

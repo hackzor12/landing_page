@@ -1,11 +1,14 @@
 import React from 'react';
+import logo from '../img/logo.png';
 
 const SocialBrand = () => {
   return (
     <section id="social" className="grey lighten-2">
       <div className="container center-align">
-        <h1><a href="" className="brand-logo">Logo</a></h1>
-        <p>We believe in Simple, Creative & Flexible Design Standards.</p>
+        <img src={logo} className="brand-logo"/>
+        <div className="col s6 center-align black-text">
+          Peregrine Cloud Solutions, LLC
+        </div>
       </div>
     </section>
   );

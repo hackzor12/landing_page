@@ -5,13 +5,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="blue lighten-4"
-      style={{ backgroundImage: 'url(' + clouds + ')'}}
+      className="blue lighten-1"
+      style={{ backgroundImage: `url(${clouds})`}}
     >
       <div className="container valign-wrapper jc-center">
-        <div className="valign center-align white-text">
-          <p className="flowtext hide-on-small-only">Migrate your company's assets to the cloud</p>
-          <h3>
+        <div style={{ textShadow: '1px 1px black' }} className="valign center-align white-text">
+          <h3  >
             Cloud Migration Experts
           </h3>
 
@@ -21,8 +20,9 @@ const Hero = () => {
             Migrate your company's assets to the cloud quickly and safely
           </p>
 
-          <a className="btn waves-light waves-effect m-r-16">Features</a>
-          <a className="btn waves-light waves-effect">Portfolio</a>
+          <a style={{ textShadow: '0px 0px' }} className="btn waves-light waves-effect m-r-16 blue lighten-1">
+            Get A Quote!
+          </a>
         </div>
       </div>
     </section>
