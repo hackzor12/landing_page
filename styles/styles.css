@@ -1,3 +1,11 @@
+html {
+  overflow-y: auto;
+}
+
+html .loading {
+  overflow-y: hidden;
+}
+
 nav .nav-wrapper {
   max-width: 1000px;
   padding: 0 16px;

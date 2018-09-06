@@ -5,7 +5,7 @@ import { team } from './../config';
 
 const OurTeam = () => {
   return (
-    <section id="our-team" className="grey lighten-2">
+    <section id="our-team" className="grey lighten-4">
       <div className="container">
         <h3 className="center-align">Our Team</h3>
         <div className="row center-align">
