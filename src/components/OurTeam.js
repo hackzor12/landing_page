@@ -1,25 +1,24 @@
 import React from 'react';
 import TeamMember from './TeamMember';
 
+import { team } from './../config';
+
 const OurTeam = () => {
   return (
-    <section id="our-team">
+    <section id="our-team" className="grey lighten-2">
       <div className="container">
-        <h1>Latest from the Loop</h1>
-        <div className="row">
-          <div className="col m4">
-            <TeamMember />
-          </div>
-          <div className="col m4">
-            <TeamMember />
-          </div>
-          <div className="col m4">
-            <TeamMember />
-          </div>
+        <h3 className="center-align">Our Team</h3>
+        <div className="row center-align">
+            { team.map((data, idx, { length } ) =>
+              <div className={ `col m${length < 4 ? 12/length : '4'}`}  key={ idx }>
+                  <TeamMember props={ data } key={ idx } />
+              </div>)
+            }
         </div>
       </div>
     </section>
   );
 };
+
 
 export default OurTeam;

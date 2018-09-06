@@ -125,3 +125,7 @@ p {
   width: 350px;
   padding: 5px;
 }
+
+.team-member img {
+    border-radius: 50%;
+}

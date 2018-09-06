@@ -1,6 +1,16 @@
+import mike from './img/mike.jpg'
+import kalyn from './img/kalyn.jpg'
+
+
 module.exports.team = [
   {
     "name": "Michael Mahon",
-    "image": ''
+    "title": "Cloud Engineer II",
+    "image": mike
+  },
+  {
+    "name": "Kalyn Warnock",
+    "title": "Cloud Engineer II",
+    "image": kalyn
   }
 ]

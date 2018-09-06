@@ -13,9 +13,9 @@ const App = () => {
     <div id="app">
       <Navbar />
       <Hero />
-      <About />
-      <Services />
-      <Contact />
+      {/* <About /> */}
+      {/* <Services /> */}
+      {/* <Contact /> */}
       <OurTeam />
       {/* <SocialBrand /> */}
       <Footer />
