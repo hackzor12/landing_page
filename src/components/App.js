@@ -5,12 +5,12 @@ import React, { Component } from 'react';
 // import Contact from './Contact';
 // import SocialBrand from './SocialBrand';
 
-import asyncComponent from '../hocs/asyncComponent'
+import AsyncComponent from '../hocs/AsyncComponent'
 
-const Navbar = asyncComponent(() => import('./Navbar'));
-const Hero = asyncComponent(() => import('./Hero'), { height: '680px' });
-const OurTeam = asyncComponent(() => import('./OurTeam'));
-const Footer = asyncComponent(() => import('./Footer'));
+const Navbar = AsyncComponent(() => import('./Navbar'));
+const Hero = AsyncComponent(() => import('./Hero'), { height: '680px' });
+const OurTeam = AsyncComponent(() => import('./OurTeam'));
+const Footer = AsyncComponent(() => import('./Footer'));
 
 const HTML = document.documentElement
 
