@@ -14,13 +14,13 @@ const AsyncComponent = (importComponent, options) => {
                 .then(cmp => {
                     this.setState({
                       component: cmp.default,
-                    }, () => this.props.onLoaded ? this.props.onLoaded() : null);
+                    });
                 });
         }
 
         render() {
             const C = this.state.component;
-
+            
             return C ? <C {...this.props}/> :
             options && options.height ?
               <div className="grey lighten-4 center-align center-element" style={{

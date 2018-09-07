@@ -19,26 +19,15 @@ const HTML = document.documentElement
 class App extends Component {
   constructor(props) {
     super(props)
-    this.onLoaded = this.onLoaded.bind(this)
     this.state = {
       isLoading: true
-    }
-  }
-
-  onLoaded() {
-    this.enableScroll.bind(this)
-  }
-
-  enableScroll() {
-    if (HTML.classList.contains('loading')) {
-      HTML.classList.remove('loading')
     }
   }
 
   render() {
     return <div id="app" >
       <Navbar />
-      <Hero onLoaded={this.onLoaded} />
+      <Hero />
       {/* <About /> */}
       {/* <Services /> */}
       {/* <Contact /> */}
