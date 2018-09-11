@@ -11,7 +11,7 @@ const OurTeam = () => {
         <div className="row center-align">
             { team.map((data, idx, { length } ) =>
               <div className={ `col m${length < 4 ? 12/length : '4'}`}  key={ idx }>
-                  <TeamMember props={ data } key={ idx } />
+                  <TeamMember data={ data } key={ idx } />
               </div>)
             }
         </div>
