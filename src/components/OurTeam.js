@@ -1,6 +1,5 @@
 import React from 'react';
 import TeamMember from './TeamMember';
-
 import { team } from './../config';
 
 const OurTeam = () => {
